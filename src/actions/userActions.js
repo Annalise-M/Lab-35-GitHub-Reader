@@ -1,5 +1,5 @@
 export const SET_USERS = 'SET_USERS';
-export const setUsers = users => ({
+export const setUsers = profiles => ({
   type: SET_USERS,
-  payload: users
+  payload: profiles
 });

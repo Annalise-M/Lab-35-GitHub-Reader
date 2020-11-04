@@ -4,7 +4,7 @@ import reducer from './userReducer';
 describe('user reducer', () => {
   it('handles the SET_USERS action', () => {
     const state = {
-      profile: [
+      profiles: [
         { login: 'annalise-m' },
         { html_url: 'https://github.com/Annalise-M' },
         { followers: '9' },
@@ -23,7 +23,7 @@ describe('user reducer', () => {
     const newState = reducer(state, action);
 
     expect(newState).toEqual({
-      profile: [
+      profiles: [
         { login: 'annalise-m' },
         { html_url: 'https://github.com/Annalise-M' },
         { followers: '9' },
